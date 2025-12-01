@@ -9,7 +9,7 @@ with open("input.txt", "r") as inf:
 
         position = position + turn
         if position <= 0 or position > 99:
-            zero_count += abs(int(turn / 100)) + 1
+            zero_count += abs(turn // 100) + 1
         position = position % 100
 
 print(zero_count)
