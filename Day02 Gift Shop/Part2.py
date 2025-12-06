@@ -9,7 +9,6 @@ with open("input.txt", "r") as inf:
             n = 1
             while n <= (len(idstr) // 2):
                 if match := re.match(fr"((.){{{n}}})(\1)+$", idstr):
-                    # print(f"{idstr} repeating")
                     sum += id
                     break
                 n += 1

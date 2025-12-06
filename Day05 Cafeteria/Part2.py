@@ -22,7 +22,6 @@ for index in range(1, len(ranges)):
 combined_ranges.append((minimum, maximum))
 
 total = 0
-# turn it into a set to sort and remove duplicates
 for minimum, maximum in combined_ranges:
     total += (maximum-minimum)+1
 
